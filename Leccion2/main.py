@@ -23,18 +23,12 @@ else:
 
 # ctrl + / para comentar
 
-condicion = False
+# condicion = False
 # if condicion:
 #     print('Condicion Verdadera')
 # else:
 #     print('Condicion falsa')
 
-print('Condicion verdadera') if condicion else print('Condicion falsa')
-
-
-
-
-
-
+# print('Condicion verdadera') if condicion else print('Condicion falsa')
 
 

@@ -253,7 +253,7 @@ print(f'''
         id: {idLibro}
         Precio: {precio}
         Envio gratuito: {envio}
-''')
+"""
 
 
 
