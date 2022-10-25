@@ -1,7 +1,9 @@
+
 # Comenzamos con funciones
 
 #mi_funcion() #no se puede llamar antes de def la funcion
 # Definimos una funcion
+'''
 def mi_funcion(): # para identificar a la funcion usamos parentesis
     print('Hola Matu')
 
@@ -70,3 +72,34 @@ def listarNombres(*nombres): # normalmente se utiliza: *args
         print(nombre)
 listarNombres('mati', 'itachi', 'naruto', 'etc')
 listarNombres('marcos', 'pepe', 'de pol')
+
+def listarTerminos(**kwargs): #se puede poner cualquier nombre, pero es es el mas utlizado
+    for llave, valor in kwargs.items(): #kwargs significa: key word argument
+        print(f'{llave} : {valor}')
+
+listarTerminos() # no se muestra nada
+listarTerminos(IDE ='Integrated Develoment Enviroment', PK='Primary Key')
+listarTerminos(Nombre='Leo Messi')
+
+def desplegarNombres(nombres):
+    for nombre in nombres:
+        print(nombres)
+nombres2 = ['Tito', 'Pedro', 'Itachi']
+desplegarNombres(nombres2)
+desplegarNombres('Naruto')
+#desplegarNombres('8') #nos da error porque es un entero (no es un objeto iterable)
+desplegarNombres((10,)) #se convierte en tupla, no olvidar la coma
+desplegarNombres([21, 6]) #se convierte en lista
+'''
+# Funciones Recursivas
+def factorial(numero):
+    if numero == 1: #caso base
+        return 1
+    else: 
+        return numero * factorial(numero-1) # caso recursivo
+numeroFactorial = int(input("Digite un numero para calcular el factorial: "))
+resultado = factorial(numeroFactorial) # lo hacemos en codigo duro
+print(f'El factorial del num. {numeroFactorial} es: {resultado}')
+
+
+
