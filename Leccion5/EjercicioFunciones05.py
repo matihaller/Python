@@ -6,12 +6,12 @@
 # De ºF a ºC: se resta 32 y se divide entre 1.8.
 
 temperatura_fahrenheit = float(input('Digite la temperatura en °F: '))
-fahrenheit = (temperatura_fahrenheit - 32) / 1.8
-print(f'Temperatura en fahrenheit: °{fahrenheit}')
+celsius = (temperatura_fahrenheit - 32) / 1.8
+print(f'Temperatura en celsius: °{celsius}')
 
 temperatura_fahrenheit = float(input('Digite la temperatura en °C: '))
-celsius = (temperatura_fahrenheit * 1.8 + 32)
-print(f'Temperatura en celsius: °{celsius}')
+fahrenheit = (temperatura_fahrenheit * 1.8 + 32)
+print(f'Temperatura en fahrenheit: °{fahrenheit}')
 
 '''
 #Funcion que convierte de celsius a fahrenheit
